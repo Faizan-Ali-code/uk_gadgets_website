@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -8,8 +8,8 @@
   outline: none;
   border: none;
   text-decoration: none;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -86,8 +86,14 @@ section {
 }
 
 .header .contact-info p i {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   color: yellow;
+}
+
+.header .contact-info .share p {
+  height: 350px;
+  width: 350px;
+  font-size: 20px;
 }
 
 .header .navbar {
@@ -188,6 +194,10 @@ section {
   padding: 1rem 0;
 }
 
+.home .content span {
+  color: #2597f4;
+}
+
 .fun-fact {
   display: -ms-grid;
   display: grid;
@@ -222,7 +232,7 @@ section {
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .about {
@@ -257,7 +267,7 @@ section {
   font-size: 3rem;
   text-transform: capitalize;
   color: #334;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .about .content p {
@@ -265,6 +275,10 @@ section {
   line-height: 2;
   color: #777;
   padding: 1rem 0;
+}
+
+.about .content span {
+  color: #2597f4;
 }
 
 .services {
@@ -302,7 +316,7 @@ section {
 
 .services .box-container .box img {
   height: 7rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .services .box-container .box h3 {
@@ -313,6 +327,47 @@ section {
 }
 
 .services .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+.services .box-container .box.laser {
+  text-align: center;
+  background: #334;
+  border: 0.2rem solid #334;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+  color: #fff;
+}
+
+.services .box-container .box.laser:hover {
+  background: #fff;
+}
+
+.services .box-container .box.laser:hover h3 {
+  color: #334;
+}
+
+.services .box-container .box.laser:hover p {
+  color: #334;
+}
+
+.services .box-container .box.laser img {
+  height: 7rem;
+  margin-bottom: 0.5rem;
+}
+
+.services .box-container .box.laser h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #334;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.services .box-container .box.laser p {
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
@@ -378,7 +433,7 @@ section {
 
 .facilities .box-container .box img {
   height: 10rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .facilities .box-container .box h3 {
@@ -433,7 +488,7 @@ section {
   font-size: 1.4rem;
   line-height: 2;
   color: #777;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .team .box-container .box .content .share {
@@ -445,7 +500,7 @@ section {
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 1.7rem;
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
   background: #334;
   color: #fff;
 }
@@ -506,7 +561,7 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -1;
-  opacity: .3;
+  opacity: 0.3;
   color: #2597f4;
 }
 
@@ -520,7 +575,7 @@ section {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .reviews .box-container .box .user h3 {
@@ -575,32 +630,38 @@ section {
   width: 49%;
 }
 
-.contact .row form .inputBox input, .contact .row form textarea {
+.contact .row form .inputBox input,
+.contact .row form textarea {
   padding: 1.2rem 1.4rem;
   font-size: 1.6rem;
   color: #777;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
   border: 0.2rem solid #334;
 }
 
-.contact .row form .inputBox input:focus, .contact .row form textarea:focus {
+.contact .row form .inputBox input:focus,
+.contact .row form textarea:focus {
   background: #334;
   color: #fff;
 }
 
-.contact .row form .inputBox input:focus::-webkit-input-placeholder, .contact .row form textarea:focus::-webkit-input-placeholder {
+.contact .row form .inputBox input:focus::-webkit-input-placeholder,
+.contact .row form textarea:focus::-webkit-input-placeholder {
   color: #fff;
 }
 
-.contact .row form .inputBox input:focus:-ms-input-placeholder, .contact .row form textarea:focus:-ms-input-placeholder {
+.contact .row form .inputBox input:focus:-ms-input-placeholder,
+.contact .row form textarea:focus:-ms-input-placeholder {
   color: #fff;
 }
 
-.contact .row form .inputBox input:focus::-ms-input-placeholder, .contact .row form textarea:focus::-ms-input-placeholder {
+.contact .row form .inputBox input:focus::-ms-input-placeholder,
+.contact .row form textarea:focus::-ms-input-placeholder {
   color: #fff;
 }
 
-.contact .row form .inputBox input:focus::placeholder, .contact .row form textarea:focus::placeholder {
+.contact .row form .inputBox input:focus::placeholder,
+.contact .row form textarea:focus::placeholder {
   color: #fff;
 }
 
@@ -631,14 +692,14 @@ section {
 
 .footer .box-container .box .link {
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
 }
 
 .footer .box-container .box .link i {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   color: #2597f4;
 }
 
@@ -651,7 +712,7 @@ section {
 }
 
 .footer .box-container .box p {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
@@ -681,7 +742,7 @@ section {
   font-size: 1.7rem;
   background: #334;
   color: #fff;
-  margin-right: .3rem;
+  margin-right: 0.3rem;
   text-align: center;
 }
 

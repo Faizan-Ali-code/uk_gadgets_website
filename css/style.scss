@@ -191,6 +191,10 @@ section {
       @include graphText(1.5rem);
       padding: 1rem 0;
     }
+
+    span {
+      color: $blue;
+    }
   }
 }
 
@@ -245,6 +249,9 @@ section {
       @include graphText(1.5rem);
       padding: 1rem 0;
     }
+    span {
+      color: $blue;
+    }
   }
 }
 
@@ -281,6 +288,42 @@ section {
       h3 {
         @include titleText(2rem);
         padding: 1rem 0;
+      }
+
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+
+    .box.laser {
+      text-align: center;
+      background: $black;
+      border: $border;
+      box-shadow: $box-shadow;
+      padding: 3rem 2rem;
+      color: $white;
+
+      &:hover {
+        background: $white;
+
+        h3 {
+          color: $black;
+        }
+
+        p {
+          color: $black;
+        }
+      }
+
+      img {
+        height: 7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        @include titleText(2rem);
+        padding: 1rem 0;
+        color: $white;
       }
 
       p {
