@@ -764,6 +764,12 @@ section {
   color: #2597f4;
 }
 
+.footer .credit span a {
+  color: #2597f4;
+  font-style: bold;
+  font-weight: 600;
+}
+
 @media (max-width: 1200px) {
   .header .contact-info {
     padding: 2rem 5%;
